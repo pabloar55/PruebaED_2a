@@ -6,8 +6,9 @@ package clases;/*
 import java.util.TreeSet;
 
 /**
- *
- * @author ProfDiurno
+ * Clase Curso con atributos nombre y lista alumnos
+ * @version version inicial
+ * @author Pablo Armas
  */
 public class Curso {
 
@@ -16,7 +17,7 @@ public class Curso {
 
     /**
      * generamos el getter del TreeSet para comprobar que se añade
-     * @return
+     * @return devuelve el TreeSet
      */
     public TreeSet<Persona> getListaAlumnos() {
         return listaAlumnos;
@@ -42,6 +43,10 @@ public class Curso {
         return s;
     }
 
+    /**
+     * Metodo que añade una persona a la lista de alumnos
+     * @param p la persona a añadir
+     */
     public void aniadirAlumno(Persona p) {
         listaAlumnos.add(p);
     }
