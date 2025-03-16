@@ -6,7 +6,12 @@ package clases;/*
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Objects;
-
+/**
+ * Clase Persona que extiende de Comparable<Persona> con atributos nif, nombre,
+ * genero y nacimiento
+ * @version version inicial
+ * @author Pablo Armas
+ */
 public class Persona implements Comparable<Persona> {
 
     private Nif nif;
@@ -104,6 +109,11 @@ public class Persona implements Comparable<Persona> {
         return Objects.equals(this.nif, other.nif);
     }
 
+    /**
+     * Metodo que compara dos clases Persona
+     * @param o the object to be compared (Persona)
+     * @return 0 si son iguales, otro numero si son distintas
+     */
     @Override
     public int compareTo(Persona o) {
         return this.nif.toString().compareTo(o.nif.toString());
